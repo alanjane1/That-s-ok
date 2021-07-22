@@ -1,0 +1,118 @@
+:root {
+	--color-black: #333;
+	--color-grey: #aaa;
+	--color-accent: #0076ce;
+	--color-back-accent: #0090fb;
+	--color-front-accent: white;
+	--color-accent-hover: #0074cc;
+	--color-back-grey: #eee;
+	--color-hover-grey: #ddd;
+}
+
+/* Plain HTML */
+
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''), url('../fonts/raleway-v22-latin-regular.woff2') format('woff2'), url('../fonts/raleway-v22-latin-regular.woff') format('woff');
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	max-width: 800px;
+	margin: 0 auto;
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input, select, textarea {
+	border: 1px solid var(--color-grey);
+	border-radius: 4px;
+	outline: none;
+	padding: 4px 8px;
+	min-width: 200px;
+	box-sizing: border-box;
+}
+
+input:focus, input:active, select:focus, textarea:focus, select:active, textarea:active {
+	border-color: white;
+	outline: var(--color-accent) solid 2px;
+}
+
+a:link, a:visited, a:hover, a:focus, a:active {
+	color: var(--color-black);
+	text-decoration: none;
+}
+
+a, button, input[type="submit"], input[type="button"] {
+	display: inline-block;
+	border: 1px solid var(--color-grey);
+	background-color: var(--color-back-grey);
+	font-size: 0.9rem;
+	padding: 2px 8px;
+	color: var(--color-black);
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+	background-color: var(--color-hover-grey);
+}
+
+a.p, button.p, input[type="submit"].p, input[type="button"].p {
+	background-color: var(--color-back-accent);
+	border-color: var(--color-accent);
+	color: var(--color-front-accent);
+}
+
+a.p:hover, button.p:hover, input[type="submit"].p:hover, input[type="button"].p:hover {
+	background-color: var(--color-accent-hover);
+}
+
+td {
+	/* background-color: pink; */
+	padding: 4px;
+}
+
+input[type="submit"], input[type="button"] {
+	min-width: 0;
+	outline: none;
+}
+
+/* Navbar */
+
+nav {
+	/* background-color: palegoldenrod; */
+	border-bottom: 1px solid var(--color-grey);
+}
+
+nav>a {
+	/* background-color: pink; */
+	display: inline-block;
+	padding: 10px 5px;
+	margin-left: -4px;
+	background-color: white;
+	border: none;
+	font-size: 1rem;
+}
+
+nav>a:first-child {
+	margin-left: 0;
+}
+
+nav>a:hover {
+	color: var(--color-accent);
+	background-color: white;
+	text-decoration: underline;
+}
+
+/* Utilities */
+
+.r {
+	float: right;
+}
