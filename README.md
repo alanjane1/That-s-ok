@@ -7,3 +7,4 @@ CSS "framework" for people who don't have time for 🐃💩.
 - not to use js
 - for website to have fixed width
 - not to have too much  f💗💗💗💗💗g padding everywhere
+- to use tables to layout **some** things
